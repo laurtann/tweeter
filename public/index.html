@@ -26,11 +26,15 @@
     <!-- New Tweet Icon Link W3C -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!-- Tweet Icons Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="scripts/client.js"></script>
+
   </head>
 
   <body>
@@ -48,7 +52,7 @@
       </div>
     </nav>
 
-    <header>
+    <header class="main-header">
       <div>
           <img class="icon" src="images/profile-hex.png"> 
       </div>
@@ -60,7 +64,6 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, a dolorum cumque incidunt eos necessitatibus accusantium voluptatem facere ratione atque error enim, quas repellendus nostrum ex sapiente ea quasi est.</p> -->
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
         <form action="/tweets" method="POST">
@@ -73,6 +76,75 @@
           </div>
         </form>
       </section>
-    <main>
+
+      <section class="all-tweets">
+        <article>
+          <header>
+            <div class="tweet-user">
+              <!-- <i class="far fa-smile-wink"></i> -->
+              <img src="images/smiling-girl.png"> 
+              <p>Laura</p>
+            </div>
+            <div>
+              <p class="username">@laurtann</p>
+            </div>
+          </header>
+
+          <span>
+            <p>This is a tweet</p>
+            <hr>
+          </span>
+
+          <footer>
+            <div>
+              <p>x days ago</p>
+            </div>
+            <div>
+              <!-- This is a flag -->
+              <i class="fas fa-flag"></i>
+              <!-- This is a retweet -->
+              <i class="fas fa-retweet"></i>
+              <!-- This is a heart -->
+              <i class="fas fa-heart"></i>
+            </div>
+          </footer>
+        </article>
+
+        <article>
+          <header>
+            <div class="tweet-user">
+              <!-- <i class="far fa-smile-wink"></i> -->
+              <img src="images/smiling-girl.png"> 
+              <p>Laura</p>
+            </div>
+            <div>
+              <p class="username">@laurtann</p>
+            </div>
+          </header>
+
+          <span>
+            <p>This is a tweet</p>
+            <hr>
+          </span>
+
+          <footer>
+            <div>
+              <p>x days ago</p>
+            </div>
+            <div>
+              <!-- This is a flag -->
+              <i class="fas fa-flag"></i>
+              <!-- This is a retweet -->
+              <i class="fas fa-retweet"></i>
+              <!-- This is a heart -->
+              <i class="fas fa-heart"></i>
+            </div>
+          </footer>
+        </article>
+      </section>
+    </main>
+
+    <!-- Counter JS -->
+    <script type="text/javascript" src="scripts/composer-char-counter.js"></script>
   </body>
 </html>
