@@ -29,6 +29,9 @@
     <!-- Tweet Icons Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 
+    <!-- Moment to convert Unix to Time -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
+
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -65,85 +68,24 @@
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
+        <div class="error">
+          <i class="fas fa-exclamation"></i>
+          <p id="#bad-tweet"></p>
+          <i class="fas fa-exclamation"></i>
+        </div>
         <h2>Compose Tweet</h2>
         <form action="/tweets" method="POST">
           <!-- <label for="tweet-text">What are you humming about?</label> -->
           <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
           <hr>
-          <div class = "submit-tweet">
+          <div class="submit-tweet">
             <button type="submit">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
       </section>
-
-      <section class="all-tweets">
-        <article>
-          <header>
-            <div class="tweet-user">
-              <!-- <i class="far fa-smile-wink"></i> -->
-              <img src="images/smiling-girl.png"> 
-              <p>Laura</p>
-            </div>
-            <div>
-              <p class="username">@laurtann</p>
-            </div>
-          </header>
-
-          <span>
-            <p>This is a tweet</p>
-            <hr>
-          </span>
-
-          <footer>
-            <div>
-              <p>x days ago</p>
-            </div>
-            <div>
-              <!-- This is a flag -->
-              <i class="fas fa-flag"></i>
-              <!-- This is a retweet -->
-              <i class="fas fa-retweet"></i>
-              <!-- This is a heart -->
-              <i class="fas fa-heart"></i>
-            </div>
-          </footer>
-        </article>
-
-        <article>
-          <header>
-            <div class="tweet-user">
-              <!-- <i class="far fa-smile-wink"></i> -->
-              <img src="images/smiling-girl.png"> 
-              <p>Laura</p>
-            </div>
-            <div>
-              <p class="username">@laurtann</p>
-            </div>
-          </header>
-
-          <span>
-            <p>This is a tweet</p>
-            <hr>
-          </span>
-
-          <footer>
-            <div>
-              <p>x days ago</p>
-            </div>
-            <div>
-              <!-- This is a flag -->
-              <i class="fas fa-flag"></i>
-              <!-- This is a retweet -->
-              <i class="fas fa-retweet"></i>
-              <!-- This is a heart -->
-              <i class="fas fa-heart"></i>
-            </div>
-          </footer>
-        </article>
-      </section>
+      <section class="all-tweets"></section>
     </main>
-
     <!-- Counter JS -->
     <script type="text/javascript" src="scripts/composer-char-counter.js"></script>
   </body>
