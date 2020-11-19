@@ -38,44 +38,45 @@
     <!-- App JS -->
     <script type="text/javascript" src="scripts/client.js"></script>
 
+    <!-- Disable  Viewport Viewing -->
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
   </head>
 
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
       <span class="logo">tweeter</span>
-      <!-- <span><strong>Write</strong> a new tweet</span> -->
-      <div class = "write-a-tweet">
+      <div class="write-a-tweet">
         <span>
           <p><strong>Write</strong> a new tweet</p>
         </span>
         <span>
-          <i class="fa fa-angle-double-down"></i>
+          <button id="pointer">
+            <i class="fa fa-angle-double-down"></i>
+          </button>
         </span>
       </div>
     </nav>
-
     <header class="main-header">
       <div>
-          <img class="icon" src="images/profile-hex.png"> 
+        <img class="icon" src="images/profile-hex.png"> 
       </div>
       <br>
       <div class="name">
-          <p><strong>Your</strong> Name</p>
+        <p><strong>Your</strong> Name</p>
       </div>
-  </header>
-
+    </header>
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
         <div class="error">
-          <i class="fas fa-exclamation"></i>
-          <p id="#bad-tweet"></p>
-          <i class="fas fa-exclamation"></i>
+          <div class="flex">
+            <i class="fas fa-exclamation"></i>
+            <p id="#bad-tweet"></p>
+            <i class="fas fa-exclamation"></i>
+          </div>
         </div>
-        <h2>Compose Tweet</h2>
-        <form action="/tweets" method="POST">
-          <!-- <label for="tweet-text">What are you humming about?</label> -->
+        <form action="/tweets" method="POST" class="hide-form">
           <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
           <hr>
           <div class="submit-tweet">
