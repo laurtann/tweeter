@@ -2,7 +2,7 @@
 
 // Basic express setup:
 
-const PORT          = 8080;
+const PORT          = process.env.PORT || 8080;
 const express       = require("express");
 const bodyParser    = require("body-parser");
 const app           = express();
@@ -22,9 +22,9 @@ app.use("/tweets", tweetsRoutes);
 
 // Post for tweet form
 app.post('/tweets', (req, res) => {
-  
+
 });
 
-app.listen(PORT, () => {
-  console.log("Example app listening on port " + PORT);
+app.listen(process.env.PORT || 8080, () => {
+  console.log(`Example app listening on port ${PORT}`);
 });
