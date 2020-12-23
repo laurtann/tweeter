@@ -25,6 +25,6 @@ app.post('/tweets', (req, res) => {
 
 });
 
-app.listen(process.env.PORT || 8080, () => {
+app.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}`);
 });
