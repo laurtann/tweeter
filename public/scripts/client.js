@@ -33,7 +33,7 @@ const createTweetElement = function(tweet) {
 
     <footer>
       <div>
-        <p>${moment(tweet.created_at).fromNow()}</p>
+      <p>${moment(tweet.created_at).fromNow()}</p>
       </div>
       <div>
         <i class="fas fa-flag"></i>
