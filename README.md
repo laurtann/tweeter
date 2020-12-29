@@ -2,7 +2,7 @@
 
 Tweeter is a simple, single-page Twitter clone.
 
-This app was built using HTML, CSS, JS, jQuery and AJAX on the front-end and Node, Express and MongoDB on the back-end. It was made as the week 4 project in Lighthouse Lab's Web Development Bootcamp over four days. 
+This app was built using HTML, CSS, JS, jQuery and AJAX on the front-end and Node & Express on the back-end. It was made as the week 4 project in Lighthouse Lab's Web Development Bootcamp over four days. 
 
 
 ## Screenshots
