@@ -6,9 +6,9 @@ This app was built using HTML, CSS, JS, jQuery and AJAX on the front-end and Nod
 
 
 ## Screenshots
-!["Desktop view of Tweeter"](https://github.com/laurtann/tweeter/blob/resp-saas/docs/tweeter-desktop-view.png?raw=true)
-!["Desktop view of Tweeter with Error Message"](https://github.com/laurtann/tweeter/blob/resp-saas/docs/tweeter-error-message.png?raw=true)
-!["Tablet view of Tweeter"](https://github.com/laurtann/tweeter/blob/resp-saas/docs/tweeter-tablet-view.png?raw=true)
+!["Desktop view of Tweeter"](https://github.com/laurtann/tweeter/blob/master/docs/tweeter-desktop-view.png?raw=true)
+!["Desktop view of Tweeter with Error Message"](https://github.com/laurtann/tweeter/blob/master/docs/tweeter-error-message.png?raw=true)
+!["Tablet view of Tweeter"](https://github.com/laurtann/tweeter/blob/master/docs/tweeter-tablet-view.png?raw=true)
 
 
 ## Getting Started
